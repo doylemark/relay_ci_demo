@@ -1,4 +1,3 @@
----
 name: Update Evervault Relay
 
 on:
@@ -7,13 +6,14 @@ on:
       - main
 
 jobs:
-  - name: Install Evervault CLI
+  install-cli:
+    name: Install Evervault CLI
     runs-on: ubuntu-latest
     steps:
       - name: Install
         run: sh <(curl https://cli.evervault.com/v4/install -sL)
-
-  - name: Update Evervault Relays 
+  update-relays:
+    name: Update Evervault Relays
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
@@ -21,4 +21,3 @@ jobs:
 
       - name: Update
         run: export EV_API_KEY=${{ secrets.EV_API_KEY }} EV_APP_UUID=${{ secrets.EV_APP_UUID }} ev relay deploy
----
