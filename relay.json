@@ -1,0 +1,9 @@
+{
+  "id": "relay_destination_6c40d052494b",
+  "destinationDomain": "api.stainlessapi.com",
+  "evervaultDomain": "api-stainlessapi-com-app-f0cb771c8e77.relay.evervault.app",
+  "encryptEmptyStrings": true,
+  "authentication": null,
+  "routes": [],
+  "app": "app_f0cb771c8e77"
+}
