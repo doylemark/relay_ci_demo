@@ -7,7 +7,7 @@
   "routes": [
 {
       "method": "POST",
-      "path": "/key",
+      "path": "/payments",
       "request": [
         {
           "action": "encrypt",
