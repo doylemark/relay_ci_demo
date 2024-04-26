@@ -17,4 +17,4 @@ jobs:
         uses: actions/checkout@v2
 
       - name: Update
-        run: export EV_API_KEY=${{ secrets.EV_API_KEY }} EV_APP_UUID=${{ secrets.EV_APP_UUID }} ev relay deploy
+        run: EV_API_KEY=${{ secrets.EV_API_KEY }} EV_APP_UUID=${{ secrets.EV_APP_UUID }} ev relay deploy
