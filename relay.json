@@ -1,0 +1,26 @@
+{
+  "id": "relay_destination_458a13e0dc06",
+  "destinationDomain": "api.stripe-test.com",
+  "evervaultDomain": "api-stripe-test-com-app-f0cb771c8e77.relay.evervault.app",
+  "encryptEmptyStrings": true,
+  "authentication": null,
+  "routes": [
+{
+      "method": "POST",
+      "path": "/key",
+      "request": [
+        {
+          "action": "encrypt",
+          "selections": [
+            {
+              "type": "json",
+              "selector": "$.public"
+            }
+          ]
+        }
+      ],
+      "response": []
+    }
+  ],
+  "app": "app_f0cb771c8e77"
+}
